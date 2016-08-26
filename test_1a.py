@@ -24,7 +24,7 @@ Expectation = [("Enter DNA sequence 1:actgtgtcagtcagtcg", 0),
                ("ACUGUGUCAGUCAGUCGUUUUGGGUAGCUACGAUAAAAAAA", 4)]
 
 for logf in glob.glob("logs/*.log"):
-    print("\t".join(logf.split("_")[:2]))
+    print("\t".join(logf[5:].split("_")[:2]))
     score = 0
     with open(logf, "r") as log:
         for line in Expectation:
@@ -34,5 +34,6 @@ for logf in glob.glob("logs/*.log"):
             else:
                 print("Failure, expected %s, received %s." % (line[0], logline))
     print("Scored %d out of %d" % (score, sum([i[1] for i in Expectation])))
+    print ("="*20)
             
             
