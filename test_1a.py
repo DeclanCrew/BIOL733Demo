@@ -1,7 +1,6 @@
 import glob
 import pexpect
 
-test_data = b"actgtgtcagtcagtcg\nttttgggtagctacgat\n"
 for attempt in glob.glob("*_assignment_1a.py"):
     child = pexpect.spawn("python3.4 "+attempt)
     with open("logs/" +attempt+".log", "wb") as log:
