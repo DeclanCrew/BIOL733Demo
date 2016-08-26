@@ -1,0 +1,8 @@
+Enter DNA sequence 1:actgtgtcagtcagtcgactgtgtcagtcagtcg
+Enter DNA sequence 2:ttttgggtagctacgatttttgggtagctacgat
+DNA length = 34
+ACTGTGTCAGTCAGTCGTTTTGGGTAGCTACGAT
+Reverse Complement
+ATCGTAGCTACCCAAAACGACTGACTGACACAGT
+RNA length = 41
+ACUGUGUCAGUCAGUCGUUUUGGGUAGCUACGAUAAAAAAA
